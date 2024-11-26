@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: django-admin-autocomplete
+Version: 0.1.0
+Summary: A Django library that adds autocomplete functionality to the admin search bar
+Home-page: https://github.com/yourusername/django-admin-autocomplete
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+
+# Django Admin Autocomplete
+
+A Django library that adds autocomplete functionality to the Django admin search bar.
+
+## Installation
+
+```bash
+pip install django-admin-autocomplete
+```
+
+## Quick Start
+
+1. Add "admin_autocomplete" to your INSTALLED_APPS setting:
+
+```python
+INSTALLED_APPS = [
+    ...
+    'admin_autocomplete',
+]
+```
+
+2. In your ModelAdmin class, inherit from AutocompleteAdminMixin:
+
+```python
+from admin_autocomplete.admin import AutocompleteAdminMixin
+
+class YourModelAdmin(AutocompleteAdminMixin, admin.ModelAdmin):
+    search_fields = ['field1', 'field2']  # Fields to search
+```
+
+## Features
+
+- Adds autocomplete suggestions to the Django admin search bar
+- Customizable search fields
+- Supports related field lookups
+- Lightweight and easy to integrate
+
+## Configuration
+
+You can customize the autocomplete behavior by adding settings to your Django settings:
+
+```python
+ADMIN_AUTOCOMPLETE = {
+    'MIN_CHARS': 2,  # Minimum characters before showing suggestions
+    'MAX_RESULTS': 10,  # Maximum number of suggestions to show
+}
+```
+
+## License
+
+MIT License

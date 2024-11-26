@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+admin_autocomplete/__init__.py
+admin_autocomplete/admin.py
+admin_autocomplete/apps.py
+admin_autocomplete/static/admin_autocomplete/css/autocomplete.css
+admin_autocomplete/static/admin_autocomplete/js/autocomplete.js
+django_admin_autocomplete.egg-info/PKG-INFO
+django_admin_autocomplete.egg-info/SOURCES.txt
+django_admin_autocomplete.egg-info/dependency_links.txt
+django_admin_autocomplete.egg-info/requires.txt
+django_admin_autocomplete.egg-info/top_level.txt

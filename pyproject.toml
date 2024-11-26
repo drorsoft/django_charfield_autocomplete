@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "django-admin-autocomplete"
+version = "0.2.1"
+description = "A Django library that adds autocomplete functionality to the admin search bar"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/drorsoft/django_charfield_autocomplete"
+repository = "https://github.com/drorsoft/django_charfield_autocomplete"
+documentation = "https://github.com/drorsoft/django_charfield_autocomplete"
+keywords = ["django", "admin", "autocomplete", "search", "filter"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [{include = "admin_autocomplete"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = ">=3.2,<6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^24.0.0"
+isort = "^5.12.0"
+selenium = "^4.15.2"
+faker = "^33.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
